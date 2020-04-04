@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+      <title>demo 2</title>
+      <meta charset="utf-8">
+      <meta name="description" content="La descrizione del contenuto della pagina" />
+      <meta name="author" content="<Luca Amato"/>
+      <meta name ="copyright" content="proprietario del sito " />
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="../../stili/style.css" type="text/css">
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <style media="screen">
+
+        body{background-color: #eee;}
+
+      </style>
+    </head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../../home/index.html">HOME</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">TEAM
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="../demo/demo.html">Demo</a></li>
+                <li><a href="demo_2.html">Demo 2</a></li>
+                <li><a href="../demo_3/demo_3.html">Demo 3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+       <!-- container (cover home) -->
+       <div class="cover-team-demo2"></div>
+
+
+      <!-- single artist section -->
+      <div class="container-artist">
+       <div class="container-gallery">
+        <div class="layout-artist">
+          <div class="layout-inner-main">
+            <div class="layout-inner">
+              <div class="profile">
+                <img class="img-circle img-responsive" src="bandmember.jpg" alt="avatar-tatuatore" width="" height="">
+                <div class="name-box">
+                  <h3 class="title-gallery text-center">DEMO 2</h3>
+                </div>
+              </div>
+            </div>
+            <div class="description-artist">
+              <p>
+                An artist of considerable range, Chet Faker — the name taken by Melbourne-raised,
+                rooklyn-based Nick Murphy — writes, performs and records all of his own music,
+                giving it a warm, intimate feel with a solid groove structure.
+              </p>
+              <div class="social-gallery">
+                <div class="social-gallery-box">
+                  <a href=""><img class="social-artist" src="icons8-instagram-30.png" alt=""></a>
+                  <a href=""><img class="social-artist" src="icons8-facebook-30.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+         </div>
+        </div>
+      </div><!--CONTAINER ARTIST-->
+
+
+
+      <!-- Demo modal -->   
+      <div class="modal fade" id="demo-gallery" tabindex="-1" role="dialog" aria-labelledby="demo-gallery">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header"> 
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            </div>
+            <div class="modal-body">
+               <img id="img-modal-body" src="" style="width: 100%;">
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    
+    
+    <!--gallery tattoos-->
+    <div class="container-tattoos">
+      <div class="row">
+          <div class="col-md-4">
+              <img class="img-tattoo click " src="tattoo_1.jpg"  alt="" width="" height="" />
+          </div>
+
+          <div class="col-md-4">
+              <img class="img-tattoo click" src="tattoo_2.jpg" alt="" width="" height="" />
+          </div>
+
+          <div class="col-md-4">
+              <img class="img-tattoo click" src="tattoo_3.jpg" alt="" width="" height="" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+              <img class="img-tattoo click" src="tattoo_4.jpg" alt="" width="" height="" />
+          </div>
+
+          <div class="col-md-4">
+              <img  class="img-tattoo click" src="tattoo_5.jpg" alt="" width="" height="" />
+          </div>
+
+          <div class="col-md-4">
+              <img class="img-tattoo click" src="tattoo_6.jpg" alt="" width="" height="" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+              <img class="img-tattoo click" src="tattoo_7.jpg" alt="" width="" height="" />
+          </div>
+
+          <div class="col-md-4">
+              <img class="img-tattoo click" src="tattoo_8.jpg" alt="" width="" height="" />
+          </div>
+
+          <div class="col-md-4">
+              <img class="img-tattoo click" src="tattoo_9.jpg" alt="" width="" height="" />
+          </div>
+       </div>
+     </div>
+      <!--END GALLERY TATTOOS-->
+
+
+      <script>
+      $(document).ready(function(){
+        // Initialize Tooltip
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 900, function(){
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      })
+      </script>
+
+      <script>
+        $(function() {
+            // ogni volta che viene eseguito il comando 'click' di un componente 'img' viene eseguita la function()
+              $('img[class*="click"]').on('click', function() {
+                  // associo al componente con id img-modal-body l'attributo 'src' con quello di input (this è l'immagine dove hai fatto il click)
+                  $('#img-modal-body').attr('src', $(this).attr('src'));
+                  // questo comando mostra ('show') la modale con id demo-gallery
+                  $('#demo-gallery').modal('show');
+            });
+        });
+
+        </script>
+
+
+        <!-- foooter -->
+        <footer class="text-center fade-color">
+          <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+          </a><br><br>
+          <img class="img-responsive img-circle" src="logo_ink_bianco200px.jpg" alt="logo-home" width="200" height="187">
+          <a href="" target="_blank"><i class="fa fa-facebook-official"></i></a>
+          <a href="" target="_blank"><i class="fa fa-instagram"></i></a>
+          <p>&copy; 2019 <em>Ink Juice Tattoo</em>  
+        </footer>
+
+  </body>
+
+</html>

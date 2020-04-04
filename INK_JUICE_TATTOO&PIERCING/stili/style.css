@@ -1,0 +1,326 @@
+/*--------------------
+  GENERAL
+---------------------*/
+html,body {margin: 0; padding: 0; height: 100%;}
+body {font: 400 15px/1.8 Lato, sans-serif; color: #777;}
+h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+h3, h4 {
+  margin: 10px 0 30px 0;
+  letter-spacing: 10px;
+  font-size: 20px;
+  color: #111;
+  font-size-adjust: 100%;
+}
+.text-center {text-align: center;}
+.container {padding: 80px 120px;}
+.bg-1 {background: #2d2d30;color: #bdbdbd;}
+.bg-1 h3 {color: #fff;}
+.bg-1 p {font-style: italic;}
+.list-group-item:first-child {border-top-right-radius: 0; border-top-left-radius: 0;}
+.list-group-item:last-child {border-bottom-right-radius: 0; border-bottom-left-radius: 0;}
+
+
+
+/* SMARTPHONE MEDIA QUERIES */
+@media (max-width: 430px){
+	.layout-inner {margin: 0 auto;}
+  .cover-team {width: 100%}
+}
+@media (max-width: 624px){
+  .description-artist p{padding: 0 10px 10px; }
+}
+@media (max-width: 767px){
+  .container {padding: 40px 60px !important; }
+}
+@media (max-width: 767px){
+  .container-contact {padding: 20px !important;}
+}
+
+
+
+/*-----------------
+  NAVIGAZIONE
+------------------*/
+.navbar {
+  font-family: Montserrat, sans-serif;
+  margin-bottom: 0;
+  background-color: #2d2d30;
+  border: 0;
+  font-size: 11px !important;
+  letter-spacing: 4px;
+  opacity: 0.9;
+}
+.navbar li a, .navbar .navbar-brand {
+  color: #d5d5d5 !important;
+}
+.navbar-nav li a:hover {
+  color: #fff !important;
+}
+.navbar-nav li.active a {
+  color: #fff !important;
+  background-color: #29292c !important;
+}
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+.open .dropdown-toggle {
+  color: #fff;
+  background-color: #555 !important;
+}
+.dropdown-menu li a {
+  color: #000 !important;
+  letter-spacing: 2px;
+}
+.dropdown-menu li a:hover {
+  background-color: red !important;
+}
+
+.navbar-right {
+  float: right !important;
+  margin-right: 20px;
+}
+
+
+
+/*-----------------
+  BUTTON
+------------------*/
+.btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #f1f1f1;
+  border-radius: 0;
+  transition: .2s;
+}
+.btn:hover, .btn:focus {
+  border: 1px solid #333;
+  background-color: #fff;
+  color: #000;
+}
+
+
+
+/*-----------------
+   COVER
+------------------*/
+.cover img{
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.cover-team-demo{height:70%;
+	background-image: url("cover_demo.jpg");
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	background-position: center center;
+	position:relative;
+}
+.cover-team-demo2{height:70%;
+	background-image: url("cover_demo_2.jpg");
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	background-position: center center;
+	position:relative;
+}
+.cover-team-demo3{height:70%;
+	background-image: url("cover_demo_3.jpg");
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	background-position: center center;
+	position:relative;
+}
+
+
+
+/*-----------------
+  TEAM
+------------------*/
+.intro-team {margin: 50px 0 10px 0;}
+.person {
+  border: 7px solid transparent;
+  margin-bottom: 25px;
+  width: 80%;
+  height: 80%;
+}
+.person:hover {border-color: #f1f1f1; opacity: 0.8;}
+
+/* smartphone media queries for name artist layout */
+@media (max-width: 430px){
+	.layout-inner {margin: 0 auto;}
+  .cover-team {width: 100%}
+}
+@media (max-width: 768px){
+  .description-artist p{padding: 0 10px 10px; }
+}
+
+
+
+/*-----------------------
+  TEAM - gallery artist
+------------------------*/
+.container-artist{
+  position: relative;
+  margin-bottom: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: -60px;
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255);
+  z-index: 3;
+  box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+}
+
+.layout-artist{margin-left: auto; margin-right: auto; padding: 0 15px;}
+.layout-inner-main{
+  margin-right: -15px;
+  margin-left: -15px;
+margin-bottom: 20px;}
+
+.layout-inner{
+  display: block;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: 5%;
+  margin-right: 5%;
+  line-height: 24px;
+}
+
+.profile{position: relative; display: block;}
+.profile img{
+  max-width: 160px;
+  width: 160px;
+  margin: 0 auto;
+  border:1px solid #3c4858;
+  -webkit-transform: translate3d(0,-50%,0);
+  transform: translate3d(0,-50%,0);
+}
+.description-artist{
+  margin: 15px auto 0;
+  max-width: 600px;
+  text-align: center;
+}
+.description-artist p{
+  margin: 0 0 20px;
+  font-size: 14px;
+  color: #999!important;
+}
+
+.name-box {margin-top: -80px;}
+.title-gallery {margin: 20px 0 20px 0; color: #3c4858!important; letter-spacing: 3px;}
+.container-artist img {box-shadow: 0 5px 15px -8px rgba(0,0,0,.24), 0 8px 10px -5px rgba(0,0,0,.2);}
+.social-gallery {padding-bottom: 10px;}
+
+.social-gallery-box img {padding: 0 4px; box-shadow: 0 0 0;}
+.social-gallery a:hover {opacity: 0.7;}
+
+
+/* tattoo pics*/
+.container-tattoos{ width: 100%; margin: 0; padding: 0;}
+.img-tattoo {position: relative; width: 100%; height: auto; margin-bottom: 20px; overflow: hidden;}
+
+
+
+/*-----------------
+  COVER MIDDLE
+------------------*/
+.middle-cover {margin: 0; padding: 0; display: block; position: relative;}
+.middle-cover img {width: 100%; overflow: hidden;}
+
+
+/*-----------------
+  MODAL HEADER
+------------------*/
+.modal-header {
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.modal-header, .modal-body {
+  padding: 15px;
+
+}
+.nav-tabs li a {
+  color: #777;
+}
+.modal img{
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 6px;
+  outline: 0;
+  -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+  box-shadow: 0 3px 9px rgba(0,0,0,.5);
+}
+
+
+/*-----------------
+  MODAL-GALLERY
+------------------*/
+.modal-body {
+  position: relative;
+  padding: 0px;
+  margin: 0 0px;
+  background-color: #000;
+}
+.modal-body img {
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+  margin: 0;
+}
+
+
+
+/*-----------------
+  MAPPA - CONTATTI
+------------------*/
+.container-contact {padding: 80px 120px; margin: 0;}
+.info-title {
+  margin: 10px 0 40px 0;
+  letter-spacing: 5px;
+  font-size: 22px;
+  color: #111;
+  font-size-adjust: 100%;
+  text-decoration: underline;
+}
+#googleMap {
+  width: 100%;
+  height: auto; /* 650px */
+}
+.container-map {height: 650px; margin: 0px; padding: 80px 0 0 0;}
+
+
+
+/*-----------------
+  FOOTER
+------------------*/
+footer {width: 100%; background-color:#000 ;color: #f5f5f5; padding: 32px; }
+.fade-color {background-image: linear-gradient(to top, #000, #f5f5f5);}
+footer img {display: block;
+  width: 200px;
+  height: 187px;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 30px;}
+footer a {color: #f5f5f5;}
+footer a:hover {color: #777; text-decoration: none;}
+.fa {display: inline-block; font-size: 40px; padding: 10px 10px 20px 10px;}
+.fa {display: inline-block; font-size: 40px; padding: 10px 10px 20px 10px;}
+.info-design {font-size: 12px; border-left: 1px solid #fff; border-right: 1px solid #fff;}
+
